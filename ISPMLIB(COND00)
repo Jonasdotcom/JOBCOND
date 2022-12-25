@@ -1,0 +1,20 @@
+COND001 'CHOIX VALIDES : 1 - 2'
+'ENTREZ UN CHOIX VALIDE -                            ' +
+'1 :                                                 ' +
+'FAIT UN DISPLAY DES CHAMPS                          ' +
+'RELATIFS AUX STEPS ET AU CONDITIONS.                ' +
+'2 :                                                 ' +
+'CREE UN FICHIER DE RESUME DU                        ' +
+'JOB DANS VOTRE BIBLIOTHEQUE AINSI                   ' +
+'QU'UN FICHIER DE SCAN QUE VOUS                      ' +
+'POUVEZ EXECUTER SANS CONSEQUENCES.                  '
+COND002 'ENTREZ UN NOM DE FICHIER VALIDE'
+'ENTREZ UN NOM DE FICHIER POUR VOTRE RESUME.             ' +
+'CE FICHIER SERA UNIQUEMENT CONSTITUE DES CHAMPS         ' +
+'EXEC / IF / ELSE / ENDIF HORS SYSIN POUR VOUS           ' +
+'AIDER DANS VOTRE REPRISE.                               '
+COND003 'ENTREZ UN NOM DE FICHIER VALIDE'
+'ENTREZ UN NOM DE FICHIER POUR VOTRE JCL DE SCAN.        ' +
+'CE FICHIER REPRENDRA LE JCL SOURCE EN TYPRUN=SCAN.      ' +
+'VOUS POURREZ ALORS LE SOUMETTRE SANS CONSEQUENCES       ' +
+'AVANT DE FAIRE VOTRE VRAIE REPRISE SUR TWS.             '
