@@ -1,0 +1,26 @@
+)attr
+  % type (text) color(white) intens(high)
+  # type (text) color(blue) skip(on)
+  _ type(input) color(white) caps(on) numeric(on) hilite(uscore)
+  £ type (text) color(turq) intens(high)
+)body window(44,15)
+#--------------- %JOB COND #---------------
+#---- %AIDE SUR LES JOBS A CONDITIONS #----
+#
+ £SÉLECTIONNEZ LE TYPE D'ACTION SOUHAITÉE :
+#
+               %===> _Z#
+#
+#
+       #1.AFFICHAGE DES ÉTAPES (EXEC)
+        #ET CONTRÔLES (IF/ELSE/ENDIF)
+#
+ #2.GÉNÉRATION DES JCL D'AIDE À LA REPRISE
+#
+#
+#-------- %PF1 AIDE / PF3 ANNULER #--------
+)init
+    .ZVARS = '(UCHOICE)' &UCHOICE = ' '
+)proc
+    VER(&UCHOICE,NONBLANK,NUM,MSG=COND001)
+)end
