@@ -1,0 +1,33 @@
+)attr
+  % type (text) color(white) intens(high)
+  # type (text) color(blue) skip(on)
+  $ type (text) color(turq)
+  _ type(input) color(white) caps(on) hilite(uscore)
+  £ type (text) color(blue) hilite(uscore)
+)body window(70,20)
+#---------------------------- %JOB COND #----------------------------
+#----------------- %AIDE SUR LES JOBS A CONDITIONS #-----------------
+#
+            #POUR GÉNÉRER VOS JCL D'AIDE, VEUILLEZ ENTRER
+                  #VOS NOMS DE FICHIER CI-DESSOUS :
+£
+#
+#
+      $SQUELETTE DU JOB À REPRENDRE :
+           %===> _z                                           #
+#
+#
+      $JCL DE REPRISE EN MODE « SCAN » :
+           %===> _z                                           #
+#
+#
+#
+                  # Generated on $&ZSYSID #at $&ZTIME #by $&ZUSER #.
+#
+#---------------------%PF1 AIDE / PF3 ANNULER#----------------------
+)init
+    .ZVARS = '(DSNSUM DSNSCAN)'
+)proc
+    VER(&DSNSUM,NONBLANK,DSNAME,MSG=COND002)
+    VER(&DSNSCAN,NONBLANK,DSNAME,MSG=COND003)
+)end
